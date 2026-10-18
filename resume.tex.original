@@ -1,0 +1,262 @@
+%-------------------------
+% Resume in Latex
+%-------------------------
+
+\documentclass[letterpaper,10pt]{article}
+\usepackage{lmodern}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{xcolor}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\input{glyphtounicode}
+
+% Professional Color Theme
+\definecolor{primary}{HTML}{1F4E79}
+\definecolor{secondary}{HTML}{444444}
+
+% Brand Colors
+\definecolor{github}{HTML}{181717}
+\definecolor{linkedin}{HTML}{0A66C2}
+\definecolor{quora}{HTML}{B92B27}
+\definecolor{gmail}{HTML}{EA4335}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.8in}
+\addtolength{\textheight}{1.7in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Section styling with blue line
+\titleformat{\section}{
+  \vspace{-7pt}\raggedright\large\bfseries\color{primary}
+}{}{0em}{}[\color{primary}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+\renewcommand{\baselinestretch}{0.93}
+
+\newcommand{\resumeItem}[1]{\item\small{#1\vspace{-3pt}}}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-3pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeItemListStart}{
+  \begin{itemize}[leftmargin=0.15in,itemsep=0pt,topsep=0pt]
+}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeSubHeadingListStart}{
+  \begin{itemize}[leftmargin=0.0in, label={}]
+}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+  {\Huge \scshape \color{primary} Subhajit Kar} \\ \vspace{2pt}
+  \small Kolkata, West Bengal, India \\ \vspace{4pt}
+
+  \textbf{\Large \scshape \color{secondary} IAM \& Data Analytics Consultant} \\ \vspace{6pt}
+
+  \small
+  {\color{github}\faGithub}
+  \href{https://github.com/ha4kerspidersks}{GitHub}
+  \quad
+  {\color{linkedin}\faLinkedin}
+  \href{https://www.linkedin.com/in/subhajit-kar/}{LinkedIn}
+  \quad
+  {\color{quora}\faQuora}
+  \href{https://www.quora.com/profile/Subhajit-Kar-18}{Quora}
+  \quad
+  \faPhone\ +91-7908155395
+  \quad
+  {\color{gmail}\faEnvelope}
+  \href{mailto:karsubhajit2018@gmail.com}{Gmail}
+\end{center}
+
+%-----------SUMMARY-----------
+\section{Summary}
+
+IAM \& Data Analytics Consultant with 3+ years of experience in
+\textbf{Saviynt IGA, Identity Governance, and enterprise data reconciliation}.
+Experienced in designing secure JML workflows across Workday, AD, and Azure AD,
+improving platform stability and audit readiness. Led reconciliation of
+\textbf{300K+ identities/month} using Python, Excel, and SharePoint-driven controls,
+driving data quality through standardized ingestion, RCA, remediation, and
+continuous monitoring. Partnered with stakeholders across \textbf{9 global regions}
+to deliver executive reporting, Data Gap SOPs, and sustainable governance processes.
+
+%-----------SKILLS-----------
+\section{Skills}
+
+\small
+
+\textbf{Identity Governance \& Administration:}
+\textbf{Saviynt}, IAM/IGA, \textbf{RBAC}, \textbf{ABAC},
+Access Reviews \& Certifications, Workflows, Policy Mgmt,
+\textbf{OAuth 2.0}, Analytics, Data Governance
+
+\vspace{3pt}
+
+\textbf{AI Governance:}
+Responsible AI, AI Risk Reviews, Governance Controls, Ethical AI
+
+\vspace{3pt}
+
+\textbf{Platforms \& Tools:}
+Java, SQL, Python, REST APIs, Jenkins, Git, DevOps Principles,
+Software Development Lifecycle (SDLC), Excel, JIRA, ServiceNow
+
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+  {M.Tech in Cyber Security and Digital Forensics}{Nov 2021 -- Jul 2023}
+  {National Forensic Sciences University (NFSU)}{Gujarat, India}
+
+\vspace{4pt}
+
+\resumeSubheading
+  {B.Tech in Information Technology}{2017 -- 2021}
+  {Institute of Engineering \& Management}{Kolkata, India}
+
+\resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+  {Senior IAM Assistant Manager}{July 2023 -- Present}
+  {Deloitte}{Kolkata, India}
+
+\resumeItemListStart
+  \resumeItem{Enhanced Saviynt platform stability and governance through secure-by-design controls, driving a 20--30\% reduction in access exceptions and improving audit readiness.}
+
+  \resumeItem{Led API-driven validation of critical IGA workflows using Rest Assured and Unirest, increasing test coverage to approximately 90\% and reducing post-deployment defects by approximately 25--30\%.}
+
+  \resumeItem{Architected unified identity data flows across Workday, AD, and Azure AD, improving cross-system attribute accuracy by approximately 15\% and reducing reconciliation inconsistencies.}
+
+  \resumeItem{Delivered scalable provisioning and JML lifecycle workflows with multi-application onboarding, accelerating access readiness by approximately 30--40\% and improving SLA adherence.}
+
+  \resumeItem{Led enterprise-wide data gap and reconciliation initiatives across Workday, Saviynt, AD, and Azure AD, reconciling 300K+ identities per month using Python pipelines and Excel/SharePoint controls.}
+
+  \resumeItem{Standardised ingestion, merging, exception filtering, and false-positive removal, achieving approximately 80--90\% reduction in missing, duplicate, and mismatch attributes over two quarters.}
+
+  \resumeItem{Delivered zone-wise validation packs and drove regional approvals, converting outcomes into 250+ ServiceNow RITMs and improving remediation throughput by approximately 40\%.}
+
+  \resumeItem{Performed RCA on identity data issues (GID/EID, email, manager, status), eliminating recurring defects.}
+
+  \resumeItem{Designed and operationalized a Data Gap SOP (extract $\rightarrow$ merge $\rightarrow$ analyze $\rightarrow$ validate $\rightarrow$ remediate).}
+
+  \resumeItem{Collaborated with Saviynt, Workday, AD, and Azure AD teams to resolve high-impact defects.}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------AWARDS AND CERTIFICATIONS-----------
+\section{Awards and Certifications}
+
+{\footnotesize
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} p{0.48\textwidth} p{0.48\textwidth}}
+
+\textbf{1) Live the Dot Award} -- Deloitte (Aug 2024)\hfill
+\href{https://drive.google.com/file/d/19i3Rzvb30tOZp4M5-Br8XT9ITQXnw0Gq/view?usp=sharing}{\faLink}
+&
+\textbf{6) AI Market Specialist} -- Deloitte (Dec 2025)\hfill
+\href{https://drive.google.com/file/d/17mpb_3NBXssE53-he71NOsYE4gcg6fBB/view?usp=sharing}{\faLink}
+\\
+
+\textbf{2) Applause Award (T\&T)} -- Deloitte (Aug 2025)\hfill
+\href{https://drive.google.com/file/d/1XjteQTQeaJEW8Z8bKWwBnWte-ba4qEmp/view?usp=sharing}{\faLink}
+&
+\textbf{7) Learning Technonaut (Quarterly)} -- Deloitte (Dec 2025)\hfill
+\href{https://drive.google.com/file/d/1wmrRFPrNHVczUUc12Rog62C5wAjyIXae/view?usp=sharing}{\faLink}
+\\
+
+\textbf{3) Move the Dot - Team} -- Deloitte (Dec 2025)\hfill
+\href{https://drive.google.com/file/d/1D92iEhWPZfcTp0BsK26Et19_H67FwnQ1/view?usp=sharing}{\faLink}
+&
+\textbf{8) Skill Badge Award} -- Deloitte (Dec 2025)\hfill
+\href{https://drive.google.com/file/d/15QoiaAppNPWtY1s-M-P-NqDnf7whw-Om/view?usp=sharing}{\faLink}
+\\
+
+\textbf{4) AI Generalist} -- Deloitte (Dec 2025)\hfill
+\href{https://drive.google.com/file/d/1K5E0dOeuLz-0QZOucgOLjA9ENUAto0Nz/view?usp=sharing}{\faLink}
+&
+\textbf{9) Learning Technonaut (Quarterly)} -- Deloitte (Mar 2026)\hfill
+\href{https://drive.google.com/file/d/1027ZpMGeV2woOPqpQ8igSgh1twprEKVH/view?usp=sharing}{\faLink}
+\\
+
+\textbf{5) AI Expert} -- Deloitte (Dec 2025)\hfill
+\href{https://drive.google.com/file/d/12llxExZwcz80LFY4vkCjehruFRCPmHh8/view?usp=sharing}{\faLink}
+&
+\textbf{10) Skill Badge Award} -- Deloitte (Mar 2026)\hfill
+\href{https://drive.google.com/file/d/1GEZSpKC3g9xLoIrJXmo-1zu_iqs-Fz2G/view?usp=sharing}{\faLink}
+\\
+
+\textbf{11) Move the Dot - Team} -- Deloitte (Jun 2026)\hfill
+\href{https://drive.google.com/file/d/1FP_gDuUopojDAebEVyUGGBSfB-8CCr3U/view?usp=sharing}{\faLink}
+&
+
+\end{tabular*}
+}
+
+%-----------PROJECTS / RESEARCH-----------
+\section{Projects \& Research Publications}
+
+\resumeSubHeadingListStart
+
+\resumeSubheading
+  {1. Attacks on Smart Cars -- Research Project (M.Tech)}
+  {Jan 2023 -- Jul 2023}
+  {National Forensic Sciences University (NFSU)}{}
+
+\resumeItemListStart
+  \resumeItem{Researched \textbf{cybersecurity vulnerabilities in smart vehicles} and real-world attack surfaces.}
+  \resumeItem{Analyzed \textbf{CAN Bus attacks} (replay, reverse engineering) and identified risks.}
+  \resumeItem{Built a \textbf{car-hacking lab} using open-source tools.}
+  \resumeItem{Developed a \textbf{hands-on lab framework} for attack simulation.}
+\resumeItemListEnd
+
+\vspace{10pt}
+
+\resumeSubheading
+  {2. Automation of Web Application Security -- DevSecOps Project (M.Tech)}
+  {Jun 2022 -- Jan 2023}
+  {National Forensic Sciences University (NFSU)}{}
+
+\resumeItemListStart
+  \resumeItem{Implemented \textbf{DevSecOps pipelines} on AWS for web security.}
+  \resumeItem{Integrated \textbf{SAST (SonarQube, PHPStan)} and \textbf{DAST (OWASP ZAP)}.}
+  \resumeItem{Used \textbf{AWS Security Hub, CloudFormation, Elastic Beanstalk}.}
+  \resumeItem{Designed a \textbf{YAML-based pipeline} improving efficiency and security.}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\end{document}

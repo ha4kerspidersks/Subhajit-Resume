@@ -1,0 +1,30 @@
+name: Build Resume PDF
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: Compile LaTeX Resume
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Compile LaTeX document
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: resume.tex
+          args: -pdf -interaction=nonstopmode -outdir=dist -jobname=Subhajit_Kar_Resume
+
+      - name: Upload Resume PDF Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: Subhajit_Kar_Resume
+          path: dist/Subhajit_Kar_Resume.pdf
+          if-no-files-found: error
