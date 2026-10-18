@@ -1,8 +1,11 @@
 # Environment, Build & Security Setup Report — Subhajit-Resume
 
-**Date & Time:** 2026-10-18T20:24:00+05:30  
+**Date & Time:** 2026-10-18T20:45:00+05:30  
 **Project Path:** `/Users/subhajkar/Developer/Subhajit-Resume`  
-**Target Repository:** `https://github.com/ha4kerspidersks/Subhajit-Resume`  
+**GitHub Repository:** [https://github.com/ha4kerspidersks/Subhajit-Resume](https://github.com/ha4kerspidersks/Subhajit-Resume)  
+**Visibility:** Public  
+**Default Branch:** `main`  
+**Initial Commit:** `befaccb`  
 
 ---
 
@@ -17,7 +20,7 @@
 | **Homebrew** | Homebrew 7.0.9 (`/opt/homebrew/bin/brew`) | Verified |
 | **Git Version** | Git 2.56.0 (`/usr/bin/git`) | Verified |
 | **GitHub CLI** | `gh` v2.102.0 (`/opt/homebrew/bin/gh`) | Verified |
-| **GitHub Account** | Authenticated as `ha4kerspidersks` (SSH protocol, keyring) | Verified |
+| **GitHub Account** | Authenticated as `ha4kerspidersks` (HTTPS credential helper) | Verified |
 
 ---
 
@@ -120,6 +123,19 @@
 - **Personal Information Inspection:**
   - Phone: `+91-7908155395`
   - Email: `karsubhajit2018@gmail.com`
-- **Policy Invariant:** In accordance with section 5 & 10 of the master prompt:
-  > *"The supplied source includes a phone number and email address. These are personal information. Keep the original details in the local version, but before making the source and compiled PDF public, inspect both for personal contact information and other sensitive data. Do not publish those details without explicit authorization."*
-- **Action:** Retained full personal details in local version. Prompting user for public repository authorization before remote push.
+- **User Authorization Gate:** Explicit user authorization requested and confirmed via modal prompt.
+- **Authorization Status:** `AUTHORIZED` — Explicitly approved to publish actual email and phone to the public repository.
+
+---
+
+## 8. GitHub Publication & CI Verification Evidence
+
+- **Remote URL:** `https://github.com/ha4kerspidersks/Subhajit-Resume.git`
+- **Repository Visibility:** Public
+- **Pushed Branch:** `main`
+- **Commit SHA:** `befaccb` (`feat: initialize Subhajit Kar LaTeX resume with automated CI build`)
+- **Workflow File:** `.github/workflows/resume-build.yml`
+- **GitHub Actions Run ID:** `39139468274`
+- **Workflow Run Conclusion:** `success` (Duration: 2m 14s)
+- **Uploaded Artifact:** `Subhajit_Kar_Resume` (`dist/Subhajit_Kar_Resume.pdf`)
+- **Direct Workflow Run Link:** [https://github.com/ha4kerspidersks/Subhajit-Resume/actions/runs/39139468274](https://github.com/ha4kerspidersks/Subhajit-Resume/actions/runs/39139468274)
